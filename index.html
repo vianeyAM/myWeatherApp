@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App ☀️</title>
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Styles-->
+    <link rel="stylesheet" href="src/styles.css" />
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/c4cc1ae2a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--bootstrap css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <!--search engine-->
+        <div class="search">
+          <form class="form-inline" id="search-form">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Enter a city.."
+              aria-label="Search city"
+              id="Search-text-input"
+            />
+            <button class="btn btn-info" type="submit" id="button-search">
+              <i class="fas fa-search-location"> Search </i>
+            </button>
+            <button
+              class="btn btn-info"
+              type="submit"
+              id="button-current-location"
+            >
+              <i class="fas fa-location-arrow"></i>
+            </button>
+          </form>
+        </div>
+        <!--Place and date-->
+        <div class="overview">
+          <h1 id="city">Dublin</h1>
+          <ul>
+            <li><span id="date">Saturday</span></li>
+            <li><span id="hour">00:00</span></li>
+          </ul>
+        </div>
+        <!--weather-->
+        <div class="row">
+          <div class="col-6">
+            <img src="img/rain.png" class="img-fluid" />
+            <h3><span id="weatherType">Rain</span></h3>
+          </div>
+          <div class="col-6">
+            <strong id="temperature">12</strong
+            ><span class="units"
+              ><a href="#" id="celsius-link">ºC</a> |
+              <a href="#" id="farenheit-link">ºF</a></span
+            >
+            <div>
+              <ul>
+                <li>
+                  <i class="fas fa-cloud-showers-heavy icon-data"></i>
+                  Presipitation:<span id="presipitation"></span>
+                </li>
+                <li>
+                  <i class="fas fa-tint icon-data"></i> Humidity:<span
+                    id="humidity"
+                  ></span
+                  >%
+                </li>
+                <li>
+                  <i class="fas fa-wind icon-data"></i> Wind Speed:<span
+                    id="windspeed"
+                    >km/h</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--forecast-->
+        <div class="row forecast">
+          <div class="col-2">
+            <strong>Monday</strong>
+            <img src="img/cloudy.png" class="img-fluid" />
+            <span>ºC</span>
+          </div>
+          <div class="col-2">
+            <strong>Tuesday</strong>
+            <img src="img/cloudy.png" class="img-fluid" />
+            <span>ºC</span>
+          </div>
+          <div class="col-2">
+            <strong>Wednesday</strong>
+            <img src="img/cloudy.png" class="img-fluid" />
+            <span>ºC</span>
+          </div>
+          <div class="col-2">
+            <strong>Thursday</strong>
+            <img src="img/cloudy.png" class="img-fluid" />
+            <span>10ºC</span>
+          </div>
+          <div class="col-2">
+            <strong>Friday</strong>
+            <img src="img/cloudy.png" class="img-fluid" />
+            <span>ºC</span>
+          </div>
+        </div>
+
+        <!--footer-->
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
