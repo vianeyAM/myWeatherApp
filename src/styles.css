@@ -92,4 +92,16 @@ span.units a {
   border-radius: 15px;
   margin: 10px 5px;
   padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.footer a {
+  color: #9a77cf;
 }
