@@ -29,14 +29,19 @@ li {
   list-style: none;
 }
 
+span.units a {
+  color: #543884;
+}
+
 .search {
   display: block;
   margin: 0 auto;
-  padding-left: 25%;
+  padding: 0 11%;
 }
 
 .weather-app {
-  background-color: rgba(248, 249, 250, 0.06);
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.071);
   border-radius: 25px;
   padding: 30px 30px;
   margin: 40px auto;
@@ -51,10 +56,27 @@ li {
 
 .img-weather {
   text-align: center;
-  background-color: #a136715a;
+  background-color: #a1367195;
   color: #ffffff;
   border-radius: 25px;
   padding: 15px;
   padding-top: 25px;
   margin: 0 10%;
+  margin-right: 0;
+}
+
+.data-weather {
+  color: #9a77cf;
+  text-align: center;
+  padding: 10% 0;
+}
+
+.units {
+  position: relative;
+  top: -42px;
+  padding-left: 5px;
+}
+
+#temperature {
+  font-size: 5rem;
 }
