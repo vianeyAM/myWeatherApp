@@ -24,24 +24,27 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="cuerpo">
     <div class="container">
       <div class="weather-app">
         <!--search engine-->
         <div class="search">
           <form class="form-inline" id="search-form">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Enter a city.."
-              aria-label="Search city"
-              id="Search-text-input"
-            />
-            <button class="btn btn-info" type="submit" id="button-search">
+            <div class="form-group mx-sm-3 mb-2">
+              <input
+                type="search"
+                readonly
+                class="form-control"
+                id="Search-text-input"
+                placeholder="Enter a city.."
+                aria-label="Search city"
+              />
+            </div>
+            <button class="btn btn-info mb-2" type="submit" id="button-search">
               <i class="fas fa-search-location"> Search </i>
             </button>
             <button
-              class="btn btn-info"
+              class="btn btn-info mb-2"
               type="submit"
               id="button-current-location"
             >
@@ -52,18 +55,18 @@
         <!--Place and date-->
         <div class="overview">
           <h1 id="city">Dublin</h1>
-          <ul>
+          <ul class="dates-info">
             <li><span id="date">Saturday</span></li>
             <li><span id="hour">00:00</span></li>
           </ul>
         </div>
         <!--weather-->
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm img-weather">
             <img src="img/rain.png" class="img-fluid" />
             <h3><span id="weatherType">Rain</span></h3>
           </div>
-          <div class="col-6">
+          <div class="col-sm">
             <strong id="temperature">12</strong
             ><span class="units"
               ><a href="#" id="celsius-link">ºC</a> |

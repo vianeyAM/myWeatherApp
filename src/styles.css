@@ -1,1 +1,60 @@
+body.cuerpo {
+  background-color: #262254;
+  font-family: "Montserrat", sans-serif;
+}
 
+button.btn-info {
+  background-color: #9a77cf;
+  color: #ffffff;
+  border-color: #9a77cf;
+  margin-right: 5px;
+}
+
+h1 {
+  display: block;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.search {
+  display: block;
+  margin: 0 auto;
+  padding-left: 25%;
+}
+
+.weather-app {
+  background-color: rgba(248, 249, 250, 0.06);
+  border-radius: 25px;
+  padding: 30px 30px;
+  margin: 40px auto;
+}
+
+.overview {
+  color: #a13670;
+  font-size: 1.5rem;
+  padding: 6% 10%;
+  line-height: 1.2;
+}
+
+.img-weather {
+  text-align: center;
+  background-color: #a136715a;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 15px;
+  padding-top: 25px;
+  margin: 0 10%;
+}
