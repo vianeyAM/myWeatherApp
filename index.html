@@ -23,6 +23,8 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <!--axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body class="cuerpo">
     <div class="container">
@@ -54,7 +56,7 @@
         </div>
         <!--Place and date-->
         <div class="overview">
-          <h1 id="city">Dublin</h1>
+          <h1 id="city"></h1>
           <ul class="dates-info">
             <li><span id="date">Saturday</span></li>
             <li><span id="hour">00:00</span></li>
@@ -67,7 +69,7 @@
             <h3><span id="weatherType">Rain</span></h3>
           </div>
           <div class="col-sm data-weather">
-            <strong id="temperature">12</strong
+            <strong id="temperature"></strong
             ><span class="units"
               ><a href="#" id="celsius-link">ºC</a> |
               <a href="#" id="farenheit-link">ºF</a></span
@@ -75,20 +77,16 @@
             <div class>
               <ul>
                 <li>
-                  <i class="fas fa-cloud-showers-heavy icon-data"></i>
-                  Presipitation:<span id="presipitation"></span>
+                  <i class="fas fa-thermometer-full icon-data"></i>
+                  Feels like: <span id="feels"></span>ºC
                 </li>
                 <li>
-                  <i class="fas fa-tint icon-data"></i> Humidity:<span
-                    id="humidity"
-                  ></span
-                  >%
+                  <i class="fas fa-tint icon-data"></i>
+                  Humidity: <span id="humidity"></span>%
                 </li>
                 <li>
-                  <i class="fas fa-wind icon-data"></i> Wind Speed:<span
-                    id="windspeed"
-                    >km/h</span
-                  >
+                  <i class="fas fa-wind icon-data"></i>
+                  Wind Speed: <span id="windspeed"></span> km/h
                 </li>
               </ul>
             </div>
