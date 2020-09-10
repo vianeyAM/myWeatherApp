@@ -1,3 +1,40 @@
+function formatDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  let currentDay = days[date.getDay()];
+  let number = date.getDate();
+  let currentMonth = months[date.getMonth()];
+
+  let showDate = document.querySelector("#date");
+  showDate.innerHTML = `${currentDay}, ${number} ${currentMonth}`;
+}
+
+let now = new Date();
+formatDate(now);
+
 function formatehours(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -6,7 +43,7 @@ function formatehours(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
+  console.log();
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#weatherType");
@@ -29,8 +66,17 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#Search-text-input");
+  console.log(cityInputElement);
+}
+
 let apiKey = "9d041a66b2677835578d08c7e50fc654";
-let city = "Mexico";
+let city = "mexico";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);

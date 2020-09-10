@@ -9,8 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!--Styles-->
-    <link rel="stylesheet" href="src/styles.css" />
     <!--fontawesome-->
     <script
       src="https://kit.fontawesome.com/c4cc1ae2a8.js"
@@ -23,10 +21,12 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <!--Styles-->
+    <link rel="stylesheet" href="src/styles.css" />
     <!--axios-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body class="cuerpo">
+  <body>
     <div class="container">
       <div class="weather-app">
         <!--search engine-->
@@ -35,11 +35,9 @@
             <div class="form-group mx-sm-3 mb-2">
               <input
                 type="search"
-                readonly
                 class="form-control"
                 id="Search-text-input"
                 placeholder="Enter a city.."
-                aria-label="Search city"
               />
             </div>
             <button class="btn btn-info mb-2" type="submit" id="button-search">
