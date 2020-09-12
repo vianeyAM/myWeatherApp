@@ -105,3 +105,12 @@ span.units a {
 .footer a {
   color: #9a77cf;
 }
+
+.data-weather .active {
+  color: #9a77cf;
+  cursor: default;
+}
+
+.data-weather .active:hover {
+  text-decoration: none;
+}
