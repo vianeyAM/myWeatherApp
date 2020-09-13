@@ -10,6 +10,13 @@ button.btn-info {
   margin-right: 5px;
 }
 
+button.btn-info:hover {
+  background-color: #543884;
+  color: #ffffff;
+  border-color: #543884;
+  transition: ease-in-out 250ms;
+}
+
 h1 {
   display: block;
   margin-bottom: 0;
@@ -57,8 +64,8 @@ span.units a {
 
 .img-weather {
   text-align: center;
-  background-color: #a1367195;
-  color: #ffffff;
+  background-color: #cc669eb0;
+  color: #fff;
   border-radius: 25px;
   padding: 13% 0;
   margin: 0 5%;
